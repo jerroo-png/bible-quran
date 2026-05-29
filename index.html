@@ -1,49 +1,13 @@
-[5/28/2026 9:46 PM] Asher Hughes: <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Bible & Quran Library</title>
 <style>
 body { font-family: Arial; margin: 40px; line-height: 1.6; background: #f8f5f0; }
 h1 { color: #2e7d32; text-align: center; font-size: 2.5em; }
-h2 { color: #1565c0; }
 .container { max-width: 900px; margin: 0 auto; }
-.verse { margin: 20px 0; padding: 15px; background: white; border-left: 5px solid #2e7d32; }
-.quran { border-left-color: #1565c0; }
-</style>
-</head>
-<body>
-<div class="container">
-<h1>Bible & Quran Library</h1>
-<p style="text-align:center; font-size:1.2em;">Bringing both sacred texts together in one place</p>
-
-<h2>Theme: God's Mercy</h2>
-
-<div class="verse">
-<h3>Bible - Psalm 103:8</h3>
-<p>"The Lord is merciful and gracious, slow to anger, and plenteous in mercy."</p>
-<p><strong>Your Interpretation:</strong> </p>
-</div>
-
-<div class="verse quran">
-<h3>Quran - 7:156</h3>
-<p>"My mercy encompasses all things."</p>
-<p><strong>Your Interpretation:</strong> </p>
-</div>
-
-</div>
-</body>
-</html>
-[5/28/2026 9:55 PM] Asher Hughes: <!DOCTYPE html>
-<html>
-<head>
-<title>Bible & Quran Library</title>
-<style>
-body { font-family: Arial; margin: 20px; line-height: 1.6; background: #f8f5f0; }
-h1 { color: #2e7d32; text-align: center; }
-.container { max-width: 1000px; margin: 0 auto; }
-.question-box { background: white; padding: 20px; margin: 20px 0; border-left: 6px solid #2e7d32; }
-.verse { margin: 15px 0; padding: 12px; background: white; border-left: 6px solid #2e7d32; }
-.quran-verse { border-left-color: #1565c0; }
+.question-box { background: white; padding: 25px; margin: 30px 0; border-left: 8px solid #2e7d32; }
+.verse { margin: 20px 0; padding: 15px; background: white; border-left: 5px solid #1565c0; }
 </style>
 </head>
 <body>
@@ -52,36 +16,22 @@ h1 { color: #2e7d32; text-align: center; }
 
 <div class="question-box">
 <h2>J's Question about both texts:</h2>
-<p><strong>Your question will go here...</strong></p>
+<p><strong>Write your question about the Bible and Quran here...</strong></p>
 </div>
 
-<div class="section">
 <h2>The Holy Quran</h2>
-<div id="quran"></div>
-</div>
+<p>Verses will be added here...</p>
 
-<div class="section">
 <h2>The Bible</h2>
-<div id="bible"></div>
-</div>
-</div>
+<p>Verses will be added here...</p>
 
-<script>
-// Load Quran
-fetch('https://api.alquran.cloud/v1/quran/en.asad')
-.then(response => response.json())
-.then(data => {
-  const container = document.getElementById('quran');
-  data.data.surahs.forEach(surah => {
-    surah.ayahs.forEach(ayah => {
-      const div = document.createElement('div');
-      div.className = 'verse quran-verse';
-      div.innerHTML = <strong>${surah.number}:${ayah.number}</strong> ${ayah.text};
-      container.appendChild(div);
-    });
-  });
-});
-</script>
+</div>
 </body>
 </html>
+
+
+
+
+
+
 
